@@ -1,0 +1,21 @@
+version: "1.1"
+name: Status Check
+env:
+  host: vika.cn
+tests:
+  vika.cn:
+    steps:
+      - name: GET request
+        http:
+          url: https://vika.cn
+          method: GET
+          check:
+            status: /^20/
+  integration.vika.ltd:
+    steps:
+      - name: GET request
+        http:
+          url: https://integration.vika.ltd
+          method: GET
+          check:
+            status: /^20/

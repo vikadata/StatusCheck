@@ -1,0 +1,24 @@
+name: Check Website Broken Links
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch: # run manually
+
+jobs:
+  check:
+    name: Broken Link Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for broken links
+        id: link-report
+        uses: celinekurpershoek/link-checker@v1.0.2
+        with:
+          # Required:
+          url: "https://vika.cn"
+          # optional:
+          honorRobotExclusions: false
+          ignorePatterns: "github,google"
+          recursiveLinks: true # Check all URLs on all reachable pages (could take a while)
+      - name: Get the result
+        run: echo "${{steps.link-report.outputs.result}}"

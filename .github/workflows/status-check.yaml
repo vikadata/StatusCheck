@@ -1,0 +1,17 @@
+name: Status check
+
+on:
+  schedule:
+    - cron: '* * * * *'
+  workflow_dispatch: # run manually
+
+jobs:
+  status_check:
+    runs-on: ubuntu-latest
+    name: URL Status Check
+    steps:
+      - uses: actions/checkout@v3
+      - name: URL Status Check
+        uses: stepci/stepci@main
+        with:
+          workflow: "./.github/stepci/url-status-check.yaml"
