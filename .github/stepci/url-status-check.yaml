@@ -19,3 +19,11 @@ tests:
           method: GET
           check:
             status: /^20/
+  apitable.com:
+    steps:
+      - name: GET request
+        http:
+          url: https://apitable.com
+          method: GET
+          check:
+            status: /^20/
