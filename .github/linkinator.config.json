@@ -1,0 +1,12 @@
+{
+    "timeout": 5000,
+    "verbosity": "error",
+    "retry": 3,
+    "skip": [
+        "https://vika.cn/xmlrpc.php",
+        "https://vika.cn/comments/feed/",
+        "https://vika.cn/partners/",
+        "https://apitable.com/comments/feed/",
+        "https://apitable.com/void\\(0\\);"
+    ]
+}
