@@ -1,24 +1,27 @@
-name: Check Website Broken Links
+name: 'Broken Links Check'
 
 on:
   schedule:
-    - cron: '0 * * * *'
-  workflow_dispatch: # run manually
+    - cron: 0 6 * * 1 # every week at 14:00pm UTC+8:00
+  workflow_dispatch:
 
 jobs:
-  check:
-    name: Broken Link Check
+  linkinator:
     runs-on: ubuntu-latest
     steps:
-      - name: Check for broken links
-        id: link-report
-        uses: celinekurpershoek/link-checker@v1.0.2
+      - uses: actions/checkout@v3
+      - name: Scan links
+        id: scan-links
+        uses: JustinBeckwith/linkinator-action@v1
         with:
-          # Required:
-          url: "https://vika.cn"
-          # optional:
-          honorRobotExclusions: false
-          ignorePatterns: "github,google"
-          recursiveLinks: true # Check all URLs on all reachable pages (could take a while)
-      - name: Get the result
-        run: echo "${{steps.link-report.outputs.result}}"
+          paths: "https://vika.cn ,https://vika.cn/?home=1, https://apitable.com, https://vika.cn/pricing, https://help.vika.cn, https://about.vika.cn"
+          config: .github/linkinator.config.json
+
+      - name: Create new issue as bug report
+        if: ${{ failure() }}
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.VK_GITHUB_TOKEN }}
+          SUMMARY_LINK: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        with:
+          filename: .github/issue-broken-link-template.md
