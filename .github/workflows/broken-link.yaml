@@ -14,7 +14,7 @@ jobs:
         id: scan-links
         uses: JustinBeckwith/linkinator-action@v1
         with:
-          paths: "https://vika.cn ,https://vika.cn/?home=1, https://apitable.com, https://vika.cn/pricing, https://help.vika.cn, https://about.vika.cn"
+          paths: "https://vika.cn ,https://vika.cn/?home=1, https://apitable.com, https://vika.cn/pricing"
           config: .github/linkinator.config.json
 
       - name: Create new issue as bug report
