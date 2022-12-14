@@ -11,6 +11,22 @@ tests:
           method: GET
           check:
             status: /^20/
+  wp.vika.cn:
+    steps:
+      - name: GET request
+        http:
+          url: https://vika.cn?home=1
+          method: GET
+          check:
+            status: /^20/
+  bbs.vika.cn:
+    steps:
+      - name: GET request
+        http:
+          url: https://bbs.vika.cn
+          method: GET
+          check:
+            status: /^20/
   integration.vika.ltd:
     steps:
       - name: GET request

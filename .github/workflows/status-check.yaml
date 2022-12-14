@@ -15,3 +15,12 @@ jobs:
         uses: stepci/stepci@main
         with:
           workflow: "./.github/stepci/url-status-check.yaml"
+
+      - name: Create new issue as bug report
+        if: ${{ failure() }}
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SUMMARY_LINK: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        with:
+          filename: .github/status-check-issue-template.md

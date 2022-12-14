@@ -2,6 +2,7 @@
 StatusCheck is the service used to check the status of the website
 Checking website
 + vika.cn
++ bbs.vika.cn 
 + apitable.com
 + integration.vika.ltd 
 
