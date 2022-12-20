@@ -2,7 +2,7 @@ name: 'Broken Links Check'
 
 on:
   schedule:
-    - cron: 0 6 * * 1 # every week at 14:00pm UTC+8:00
+    - cron: 0 6 * * 1 # every monday at 14:00pm UTC+8:00
   workflow_dispatch:
 
 jobs:
