@@ -86,16 +86,20 @@ jobs:
           filename: .github/broken-links-check-issue-template.md
 ```
 
+<br/>
+
 #### How to custom your workflow
 
 1. **Create workflow yaml file**
-[broken-link.yaml](./.github/workflows/broken-link.yaml) is a real workflow example for you.
+
+> [broken-link.yaml](./.github/workflows/broken-link.yaml) is a real workflow example for you.
 change the value in `jobs.steps[1].with.paths` to which url you want to monitor. If more than one url that you want to monitor, please add a comma separated each url.
 
 <br/>
 
 2. **modify the issue template**
-when a broken link is detected, workflow will create a new bug issue. If you want to modify the issue template, please add a markdown file under `./github/` folder ([example file](./.github/broken-links-check-issue-template.md)):
+
+> when a broken link is detected, workflow will create a new bug issue. If you want to modify the issue template, please add a markdown file under `./github/` folder ([example file](./.github/broken-links-check-issue-template.md)):
 
 ```markdown
 ---
@@ -115,7 +119,7 @@ there are several links are broken.
 
 3. **How to ignore the special links we don't want to marked as broken links?**
 
-please modify the file `./github/linkinator.config.json`, append urls to the value of `skip` property :
+> please modify the file `./github/linkinator.config.json`, append urls to the value of `skip` property :
 
 ```json
 {
@@ -137,8 +141,11 @@ please modify the file `./github/linkinator.config.json`, append urls to the val
 }
 ```
 
+<br/>
+
 4. **Can I run the github workflow manually?**
-Yes, go to the [action page](https://github.com/vikadata/StatusCheck/actions/workflows/broken-link.yaml) and click the button "Run workflow"
+
+> Yes, go to the [action page](https://github.com/vikadata/StatusCheck/actions/workflows/broken-link.yaml) and click the button "Run workflow"
 
 
 ## Reference
