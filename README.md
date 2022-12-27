@@ -1,6 +1,6 @@
 # StatusCheck
 
-<img src="https://t.bkit.co/w_63aaadea463cd.gif" />
+<img src="https://t.bkit.co/w_63aaaf090e945.gif" />
 
 StatusCheck is the service used for checking the status of specified website:
 
