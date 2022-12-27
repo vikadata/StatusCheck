@@ -1,5 +1,9 @@
 # StatusCheck
 
+<a href="https://trackgit.com">
+  <img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/lc5wajj00bvgvyh6ytqe" alt="trackgit-views" />
+</a>
+
 StatusCheck is the service used for checking the status of specified website:
 
 + vika.cn
