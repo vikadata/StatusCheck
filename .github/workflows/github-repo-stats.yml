@@ -8,7 +8,7 @@ on:
   workflow_dispatch: # Allow for running this manually.
 
 jobs:
-  j1:
+  statusCheck:
     name: github-repo-stats
     runs-on: ubuntu-latest
     steps:
@@ -17,3 +17,14 @@ jobs:
         uses: jgehrcke/github-repo-stats@RELEASE
         with:
           ghtoken: ${{ secrets.ghrs_github_api_token }}
+
+  apitable:
+    name: apitable-stats
+    runs-on: ubuntu-latest
+    steps:
+      - name: run-ghrs
+        # Use latest release.
+        uses: jgehrcke/github-repo-stats@RELEASE
+        with:
+          ghtoken: ${{ secrets.ghrs_github_api_token }}
+          repository: apitable/apitable
