@@ -1,5 +1,5 @@
 ---
-title: website down oops !!!
+title: website down oops {{ date | date('dddd, MMMM Do') }} !!!
 assignees: mr-kelly, kwp-lab, BensonCheung, paylm, networkhermit, pengjin123
 labels: bug
 ---
