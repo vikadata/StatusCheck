@@ -1,5 +1,5 @@
 % Statistics for apitable/apitable
-% Generated for [apitable/apitable](https://github.com/apitable/apitable) with [jgehrcke/github-repo-stats](https://github.com/jgehrcke/github-repo-stats) at 2023-01-06 03:27 UTC.
+% Generated for [apitable/apitable](https://github.com/apitable/apitable) with [jgehrcke/github-repo-stats](https://github.com/jgehrcke/github-repo-stats) at 2023-01-06 03:36 UTC.
 
 
 ## Views
