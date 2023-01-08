@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/apitable/apitable,25467,10246
+/apitable/apitable/issues,1277,349
+/apitable/apitable/pulls,912,186
+/apitable/apitable/blob/develop/docs/contribute/developer-guide.md,833,412
+/apitable/apitable/commits/develop,532,104
+/apitable/apitable/tree/develop/packages,524,305
+/apitable/apitable/tree/develop/backend-server,466,329
+/apitable/apitable/security/dependabot,302,9
+/apitable/apitable/tree/develop/backend-server/application,235,193
+/apitable/apitable/graphs/contributors,217,118
