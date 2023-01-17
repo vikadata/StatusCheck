@@ -18,6 +18,25 @@
         "https://apitable.com/blog/*",
         "https://apitable.com/zh/*",
         "https://apitable.com/?amp=1",
-        "https://apitable.com/%7B%7Burl%7D%7D"
+        "https://apitable.com/%7B%7Burl%7D%7D",
+        "https://www.beian.gov.cn/portal/registerSystemInfo",
+        "https://vika.cn/logo.png",
+        "https://angel.co/company/apitable_com/jobs",
+        "https://www.linkedin.com/company/apitable/",
+        "https://crm.bytell.cn/",
+        "https://mixpanel.com/optout/",
+        "https://www.cookiebot.com/privacy-policy",
+        "https://vika.cn/link/",
+        "https://vika.cn/channel-sales/",
+        "https://apitable.com/privacy-policy/",
+        "https://vika.cn/ito/",
+        "https://apitable.com/terms-and-conditions/",
+        "https://vika.cn/digital-engine/",
+        "https://vika.cn/retail-stores/",
+        "https://apitable.com/about/%7B%7Burl%7D%7D",
+        "https://apitable.com/terms-and-conditions/%7B%7Burl",
+        "https://apitable.com/privacy-policy/%7B%7Burl",
+        "https://apitable.com/about/%7B%7Burl",
+        "https://vika.cn/reservation/undefined"
     ]
 }
