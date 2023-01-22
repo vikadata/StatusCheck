@@ -12,9 +12,15 @@ jobs:
     name: apitable-stats
     runs-on: ubuntu-latest
     steps:
+      - name: Generate token
+        id: generate_token
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: run-ghrs
         # Use latest release.
         uses: jgehrcke/github-repo-stats@RELEASE
         with:
-          ghtoken: ${{ secrets.GITHUB_TOKEN }}
+          ghtoken: ${{ steps.generate_token.outputs.token }}
           repository: apitable/apitable
