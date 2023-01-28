@@ -1,4 +1,4 @@
-name: 'Scan Homepage Broken Links Check'
+name: 'Scan Help Center Broken Links'
 
 on:
   schedule:
@@ -14,8 +14,8 @@ jobs:
         id: scan-links
         uses: JustinBeckwith/linkinator-action@v1
         with:
-          paths: "https://vika.cn ,https://vika.cn/?home=1, https://apitable.com, https://vika.cn/pricing"
-          config: .github/homepage-linkinator.config.json
+          paths: "https://help.vika.cn, https://help.apitable.com"
+          config: .github/hc-linkinator.config.json
 
       - name: Create new issue as bug report
         if: ${{ failure() }}
@@ -24,4 +24,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SUMMARY_LINK: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         with:
-          filename: .github/homepage-broken-link-issue-template.md
+          filename: .github/broken-links-check-issue-template.md

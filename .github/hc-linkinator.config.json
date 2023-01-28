@@ -1,0 +1,6 @@
+{
+    "timeout": 5000,
+    "verbosity": "error",
+    "retry": 3,
+    "skip": []
+}
