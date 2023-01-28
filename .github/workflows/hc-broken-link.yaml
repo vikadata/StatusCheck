@@ -24,4 +24,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SUMMARY_LINK: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         with:
-          filename: .github/broken-links-check-issue-template.md
+          filename: .github/hc-broken-link-issue-template.md
