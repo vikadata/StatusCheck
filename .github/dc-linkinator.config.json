@@ -2,5 +2,13 @@
     "timeout": 5000,
     "verbosity": "error",
     "retry": 3,
-    "skip": []
+    "skip": [
+        "https://api.vika.cn/fusion",
+        "https://vika.cn/fusion",
+        "https://vika.cn/api",
+        "https://api.apitable.com/fusion",
+        "https://apitable.com/fusion",
+        "https://apitable.com/api",
+        "https://developers.apitable.com/widget/introduction",
+    ]
 }
