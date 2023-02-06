@@ -1,6 +1,6 @@
 ---
 title: Some broken links detected on the developer center
-assignees: kwp-lab, xukecheng
+assignees: xukecheng
 labels: bug
 ---
 

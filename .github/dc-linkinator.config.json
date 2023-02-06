@@ -2,6 +2,8 @@
     "timeout": 5000,
     "verbosity": "error",
     "retry": 3,
+    "retryErrors": true,
+    "retryErrorsCount": 3,
     "skip": [
         "https://api.vika.cn/fusion",
         "https://vika.cn/fusion",
