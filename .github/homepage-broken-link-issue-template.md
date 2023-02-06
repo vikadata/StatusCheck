@@ -1,6 +1,6 @@
 ---
 title: Some broken links detected
-assignees: kwp-lab, garyli27, Javen-Woo, SHEEHAN0802
+assignees: garyli27, Javen-Woo, SHEEHAN0802
 labels: bug
 ---
 
