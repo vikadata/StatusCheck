@@ -1,8 +1,14 @@
 {
     "timeout": 5000,
     "verbosity": "error",
+    "recurse": true,
     "retry": 3,
     "retryErrors": true,
     "retryErrorsCount": 3,
-    "skip": []
+    "concurrency": 30,
+    "skip": [
+        "https:\/\/.+\\.gif",
+        "https:\/\/.+\\.jpg",
+        "https:\/\/.+\\.png"
+    ]
 }

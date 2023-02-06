@@ -4,5 +4,6 @@
     "retry": 3,
     "retryErrors": true,
     "retryErrorsCount": 3,
+    "concurrency": 30,
     "skip": []
 }
