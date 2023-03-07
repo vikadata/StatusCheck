@@ -14,7 +14,7 @@ jobs:
         id: scan-links
         uses: JustinBeckwith/linkinator-action@v1
         with:
-          paths: "https://vika.cn/developers, https://developers.apitable.com"
+          paths: "https://developers.vika.cn/, https://developers.apitable.com"
           config: .github/dc-linkinator.config.json
 
       - name: Create new issue as bug report
