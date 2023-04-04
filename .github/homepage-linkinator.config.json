@@ -41,5 +41,7 @@
         "https://apitable.com/about/%7B%7Burl",
         "https://vika.cn/reservation/undefined",
         "http://www.beian.gov.cn/portal/registerSystemInfo"
+        "https://apitable.com/xmlrpc.php?rsd",
+        "https://apitable.com/login"
     ]
 }
