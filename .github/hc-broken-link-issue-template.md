@@ -1,6 +1,6 @@
 ---
 title: Some broken links detected on the help center
-assignees: Niko030303
+assignees: kwp-lab
 labels: bug
 ---
 
