@@ -1,6 +1,6 @@
 ---
 title: website down oops {{ date | date('dddd, MMMM Do') }} !!!
-assignees: mr-kelly, kwp-lab, BensonCheung, paylm, networkhermit, pengjin123, nagisakon
+assignees: mr-kelly, kwp-lab, BensonCheung, paylm, pengjin123, nagisakon
 labels: bug
 ---
 
